@@ -5,8 +5,8 @@ from mlxtend.frequent_patterns import association_rules
 from sqlalchemy import create_engine
 import os
 
-output_path = '/Users/vincentzhang/Documents/Recommender/20191211' # {p}
-sample_size = 40000
+output_path = ' ' # {p}
+sample_size = 
 
 def assure_path_exists(path):
     if not os.path.exists(path):
@@ -20,7 +20,7 @@ def encode_units(x):
 
 assure_path_exists(output_path)
 
-engine = create_engine('postgresql://vincent:vincent%MI2019@bi-ott-prod.c1zp7ryjlwd5.us-east-1.redshift.amazonaws.com:6169/ottbi')
+engine = create_engine('  ')
 
 rules_final = pd.DataFrame()
 for country in ('Hong Kong', 'Singapore', 'Philippines', 'Thailand'):
